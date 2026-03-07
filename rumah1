@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Double Storey Shah Alam</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:40px;
+}
+
+img{
+width:600px;
+border-radius:10px;
+}
+
+.price{
+color:green;
+font-size:24px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Double Storey Shah Alam</h1>
+
+<img src="rumah1.jpg">
+
+<p class="price">RM650,000</p>
+
+<p>
+4 Bilik Tidur<br>
+3 Bilik Air<br>
+Parking 2 kereta
+</p>
+
+<p>
+Lokasi strategik berhampiran sekolah, hospital dan pusat membeli-belah.
+</p>
+
+<p>
+<a href="index.html">← Back to listing</a>
+</p>
+
+</body>
+</html>
