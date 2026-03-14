@@ -1,265 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="ms">
 <head>
-<title>Sesempurna Property</title>
-<div class="card">
-<a href="setia-eco-park-bungalow.html">
-<img src="Double Storey Terrace – Seksyen 11.jpg">
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Iklan Rumah | Sesempurna Property</title>
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --accent: #1e88e5;
+      --bg: #f4f7fb;
+      --text: #1f2937;
+      --muted: #6b7280;
+    }
 
-body{
-font-family:Arial;
-margin:0;
-background:#f5f5f5;
-}
+    * { box-sizing: border-box; }
 
-/* HEADER */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-header{
-background:#1e88e5;
-color:white;
-padding:15px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
+    header {
+      background: linear-gradient(120deg, var(--primary), var(--accent));
+      color: #fff;
+      padding: 18px 24px;
+      position: sticky;
+      top: 0;
+    }
 
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
-}
+    .header-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
 
-/* HERO */
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600;
+    }
 
-.hero{
-background:url("https://picsum.photos/1600/600") center/cover;
-height:400px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-align:center;
-}
+    .hero {
+      max-width: 1100px;
+      margin: 30px auto 0;
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+      text-align: center;
+    }
 
-.hero h1{
-font-size:40px;
-margin:0;
-}
+    .hero h1 { margin: 0 0 10px; }
 
-.hero p{
-font-size:18px;
-}
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
 
-/* SEARCH */
+    .section {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
 
-.search{
-background:white;
-padding:30px;
-text-align:center;
-}
+    .section h2 {
+      margin-bottom: 16px;
+    }
 
-.search input{
-padding:10px;
-width:200px;
-margin:5px;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
 
-.search button{
-padding:10px 20px;
-background:#1e88e5;
-border:none;
-color:white;
-cursor:pointer;
-}
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.12);
+      transition: transform 0.2s ease;
+    }
 
-/* PROPERTY GRID */
+    .card:hover { transform: translateY(-4px); }
 
-.section{
-padding:40px;
-}
+    .card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+    }
 
-.section h2{
-text-align:center;
-margin-bottom:30px;
-}
+    .info { padding: 14px; }
 
-.grid{
-display:flex;
-gap:25px;
-flex-wrap:wrap;
-justify-content:center;
-}
+    .info h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #0f172a;
+    }
 
-.card{
-background:white;
-width:280px;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 5px 10px rgba(0,0,0,0.15);
-}
+    .meta {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
+    .price {
+      margin: 0;
+      color: #0f9d58;
+      font-size: 20px;
+      font-weight: 700;
+    }
 
-.info{
-padding:15px;
-}
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
 
-.price{
-color:green;
-font-weight:bold;
-font-size:20px;
-}
+    .cta {
+      max-width: 1100px;
+      margin: 20px auto 40px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
 
-/* CONTACT */
-
-.contact{
-background:#1e88e5;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-/* FOOTER */
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
-}
-
-</style>
+    footer {
+      background: #111827;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <div class="header-wrap">
+      <h2>🏠 Sesempurna Property</h2>
+      <nav>
+        <a href="#utama">Utama</a>
+        <a href="#listing">Listing</a>
+        <a href="#hubungi">Hubungi</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-<h2>🏠 Sesempurna Property</h2>
+  <section class="hero" id="utama">
+    <h1>Web Iklan Rumah Anda</h1>
+    <p>
+      Ini ialah laman utama untuk memaparkan semua rumah yang anda iklankan.
+      Setiap listing di bawah akan bawa pelawat ke halaman khas rumah tersebut
+      dengan maklumat penuh.
+    </p>
+  </section>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Listing</a>
-<a href="#">Contact</a>
-</nav>
+  <section class="section" id="listing">
+    <h2>📌 Senarai Rumah Untuk Dijual</h2>
+    <div class="grid">
+      <article class="card">
+        <a class="card-link" href="rumah1.html">
+          <img src="rumah1.jpg" alt="Double Storey Shah Alam">
+          <div class="info">
+            <h3>Double Storey Shah Alam</h3>
+            <p class="meta">4 Bilik Tidur • 3 Bilik Air • 2 Parking</p>
+            <p class="price">RM650,000</p>
+          </div>
+        </a>
+      </article>
 
-</header>
+      <article class="card">
+        <a class="card-link" href="gaya-resort-homes.html">
+          <img src="Gaya Resort Homes Condominium.jpg" alt="Gaya Resort Homes Condominium">
+          <div class="info">
+            <h3>Gaya Resort Homes Condominium</h3>
+            <p class="meta">Bukit Rimau • 3 Bilik • Fully Furnished</p>
+            <p class="price">RM460,000</p>
+          </div>
+        </a>
+      </article>
 
+      <article class="card">
+        <a class="card-link" href="setia-eco-park-bungalow.html">
+          <img src="Double Storey Terrace – Seksyen 11.jpg" alt="Setia Eco Park Bungalow">
+          <div class="info">
+            <h3>Setia Eco Park Bungalow</h3>
+            <p class="meta">5+1 Bilik • 5 Bilik Air • Fully Furnished</p>
+            <p class="price">RM2,600,000</p>
+          </div>
+        </a>
+      </article>
 
-<!-- HERO -->
+      <article class="card">
+        <a class="card-link" href="single-storey-petunia.html">
+          <img src="Single Storey Terrace – Taman Petunia Impian.jpg" alt="Single Storey Terrace Taman Petunia Impian">
+          <div class="info">
+            <h3>Single Storey Terrace Taman Petunia Impian</h3>
+            <p class="meta">3 Bilik Tidur • 2 Bilik Air • Corner Lot</p>
+            <p class="price">RM390,000</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
 
-<section class="hero">
+  <section class="cta" id="hubungi">
+    <h2>Hubungi Ejen</h2>
+    <p>WhatsApp: 012-3456789 • Sesi viewing boleh diatur setiap hari.</p>
+  </section>
 
-<h1>Cari Rumah Impian Anda</h1>
-<p>Hubungi saya bila-bila masa</p>
-
-</section>
-
-
-<!-- SEARCH PROPERTY -->
-
-<section class="search">
-
-<h2>Search Property</h2>
-
-<input type="text" placeholder="Lokasi">
-<input type="text" placeholder="Harga Max">
-<button>Search</button>
-
-</section>
-
-
-<!-- HOT PROPERTY -->
-
-<section class="section">
-
-<h2>🔥 Hot Property</h2>
-
-<div class="grid">
-
-<div class="card">
-<a href="rumah1.html">
-<img src="rumah1.jpg">
-<div class="info">
-<h3>Double Storey Shah Alam</h3>
-<p>4 Bilik • 3 Bilik Air</p>
-<p class="price">RM650,000</p>
- 
-
-<div class="card">
-<a href="gaya-resort-homes.html">
-<img src="Gaya Resort Homes Condominium.jpg">
-</a>
-
-</div>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/200?2">
-<div class="info">
-<h3>Condo Subang</h3>
-<p>3 Bilik • 2 Bilik Air</p>
-<p class="price">RM420,000</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- LATEST LISTING -->
-
-<section class="section">
-
-<h2>Latest Listing</h2>
-
-<div class="grid">
-
-<div class="card">
-<img src="https://picsum.photos/400/200?3">
-<div class="info">
-<h3>Rumah Teres Puchong</h3>
-<p class="price">RM550,000</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://picsum.photos/400/200?4">
-<div class="info">
-<h3>Apartment Kajang</h3>
-<p class="price">RM300,000</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-<h2>Hubungi Saya</h2>
-<p>WhatsApp / Call untuk maklumat lanjut</p>
-
-</section>
-
-
-<footer>
-
-<p>© 2026 Sesempurna Property</p>
-
-</footer>
-
-
+  <footer>
+    © 2026 Sesempurna Property. Semua hak terpelihara.
+  </footer>
 </body>
 </html>
